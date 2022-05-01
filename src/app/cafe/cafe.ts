@@ -4,16 +4,24 @@ export class Cafe {
   tipo: String;
   region: String;
   sabor: String;
-  altura: String;
-  image: String;
+  altura: number;
+  imagen: String;
 
-  public constructor(id: number, nombre: string, tipo: string, region: string,sabor:string, altura:string,image: string) {
+  public constructor(
+    id: number,
+    nombre: string,
+    tipo: string,
+    region: string,
+    sabor:string,
+    altura: number,
+    imagen: string
+  ) {
     this.id = id;
     this.nombre = nombre;
     this.tipo = tipo;
     this.region = region;
     this.sabor = sabor;
     this.altura = altura;
-    this.image = image;
+    this.imagen = imagen;
  }
 }

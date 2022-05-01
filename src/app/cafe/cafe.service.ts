@@ -9,8 +9,10 @@ import { Cafe } from './cafe';
   providedIn: 'root'
 })
 export class CafeService {
-  private apiUrl = environment.baseUrl;
-constructor(private http: HttpClient) { }
+
+  private apiUrl: string = environment.baseUrl;
+
+  constructor(private http: HttpClient) { }
 
   getCafes(): Observable<Cafe[]> {
     return this.http.get<Cafe[]>(this.apiUrl);

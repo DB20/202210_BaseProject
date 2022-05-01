@@ -1,0 +1,43 @@
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let cafe of cafes" class="col mb-2">
+      <div class="card p-2" style="width: 15rem; height: 33rem">
+        <img
+          class="card-img-top"
+          src="{{ book.image }}"
+          alt="{{ book.name }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ book.name }}</h5>
+          <p class="card-text">[{{ book.editorial.name }}]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div>
+  <table class="table">
+    <thead class="col bg-dark text-white">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let cafe of cafes">
+        <th> {{ cafe.id}}</th>
+        <td> {{ cafe.nombre}}</td>
+        <td> {{ cafe.tipo }}</td>
+        <td> {{ cafe.region }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+
+</div>
