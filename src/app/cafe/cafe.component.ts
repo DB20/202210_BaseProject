@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cafe } from './cafe';
 
 @Component({
   selector: 'app-cafe',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CafeComponent implements OnInit {
 
+  private cafe: Array<Cafe> = [];
   constructor() { }
 
   ngOnInit() {
